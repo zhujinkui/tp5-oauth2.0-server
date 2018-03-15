@@ -1,0 +1,36 @@
+{
+    "name": "zhujinkui/tp5-oauth2.0-server",
+    "description": "This is a class library of Oauth2.0 based on ThinkPHP5, which is a modern standard for protecting access to API.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "zhujinkui",
+            "email": "developer@zhujinkui.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OAuth2\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0",
+        "aws/aws-sdk-php": "~2.8",
+        "firebase/php-jwt": "~2.2",
+        "predis/predis": "dev-master",
+        "thobbs/phpcassa": "dev-master",
+        "mongodb/mongodb": "^1.1"
+    },
+    "suggest": {
+        "predis/predis": "Required to use Redis storage",
+        "thobbs/phpcassa": "Required to use Cassandra storage",
+        "aws/aws-sdk-php": "~2.8 is required to use DynamoDB storage",
+        "firebase/php-jwt": "~2.2 is required to use JWT features",
+        "mongodb/mongodb": "^1.1 is required to use MongoDB storage"
+    }
+}
